@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada</title>
+    <style>
+        body {
+            background-color: purple;
+        }
+
+        h1 { 
+            font-size: 80px;
+            font-family: arial;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            margin-block-end: 10px;
+        }
+
+        .resposta {
+            font-size: 30px;
+            font-family: arial;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin: 10px;
+        }
+
+        p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entrada</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?');
+        var idade = window.prompt('Quantos anos você tem?');
+        var peso = window.prompt('Qual é o seu peso?');
+        var altura = window.prompt('Qual é a sua altura?');
+        var nacionalidade = window.prompt('Qual é a sua nacionalidade?');
+        window.confirm(`Seu nome é ${nome}, você tem ${idade} anos, pesa ${peso}kg, mede ${altura} e sua nacionalidade é ${nacionalidade}.`)
+
+        document.write(`<div class="resposta">`)
+        document.write(`<p>Seu nome é: ${nome}</p>`)
+        document.write(`<p>Você tem: ${idade} anos</p>`)
+        document.write(`<p>Você pesa: ${peso}kg</p>`)
+        document.write(`<p>Você mede: ${altura}</p>`)
+        document.write(`<p>Sua nacionalidade é: ${nacionalidade}</p>`)
+        document.write(`</div>`)
+    </script>
+</body>
+</html>
