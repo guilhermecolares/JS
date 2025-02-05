@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        body { 
+            background-color: #E8D2FF;
+        }
+
+        h1 { 
+            font-family: arial;
+            text-align: center;
+        }
+
+        .resultado {
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MEU IMC</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?');
+        var peso = Number(window.prompt('Qual é o seu peso?'));
+        var altura = Number(window.prompt('Qual é a sua altura? (em centimentros)'));
+        var imc = peso / (altura + altura);
+        window.alert(`Seu nome é ${nome}, você pesa ${peso}kg, mede ${altura}m e seu IMC é ${imc.toFixed(2)}.`)
+
+        document.write(`<div class="resultado">`)
+        document.write(`<p>Seu nome é: ${nome}</p>`)
+        document.write(`<p>Seu peso é: ${peso}kg</p>`)
+        document.write(`<p>Sua altura é: ${altura}m</p>`)
+        document.write(`<p>Seu IMC é: ${imc.toFixed(2)}</p>`)
+        document.write(`</div>`)
+    </script>
+</body>
+</html>
