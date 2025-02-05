@@ -25,3 +25,14 @@
         // QUANDO HÁ OPERADORES COM A MESMA PRECEDÊNCIA, A OPERAÇÃO É EXECUTADA DA ESQUERDA PARA A DIREITA
         // AUTO-ATRIBUIÇÃO QUANDO SOMAMOS OU SUBTRAÍMOS UM VALOR A UMA VARIÁVEL E ATRIBUÍMOS O RESULTADO A MESMA VARIÁVEL
         // OPERADORES DE INCREMENTO E DECREMENTO (++) (--) - incremento e decremento de 1
+        // OPERADORES DE ATRIBUIÇÃO (+= -= *= /= %=) - adição, subtração, multiplicação, divisão, divisão inteira
+        // OPERADORES RELACIONAIS (< > <= >= == != === !==) - menor, maior, menor ou igual, maior ou igual, igual, diferente, igual em valor e tipo, diferente em valor e tipo
+        // NUMA LINHA QUE TENHA OPERADORES ARITMÉTICOS E RELACIONAIS, OS ARITMÉTICOS SÃO EXECUTADOS PRIMEIRO
+        // OPERADORES DE IDENTIDADE (=== !==) - igualdade em valor e tipo, diferença em valor e tipo
+        // OPERADORES LÓGICOS (&& || !) - e, ou, não
+        // ORDEM DE PRECEDÊNCIA DOS OPERADORES LÓGICOS  () -> ! -> && -> || (parênteses, não, e, ou)
+        // OPERADOR LÓGICO NÃO (!) - inverte o valor de uma expressão lógica
+        // OPERADOR LÓGICO E (&&) - retorna verdadeiro se as duas expressões forem verdadeiras
+        // OPERADOR LÓGICO OU (||) - retorna verdadeiro se uma das expressões for verdadeira
+        // NUMA LINHA QUE TENHA OPERADORES ARITMÉTICOS, RELACIONAIS E LÓGICOS, A SEQUÊNCIA DE EXECUÇÃO É A SEGUINTE: ARITMÉTICOS -> RELACIONAIS -> LÓGICOS
+        // OPERADOR TERNÁRIO (condição ? expressão1 : expressão2) - operador que retorna um valor baseado em uma condição
