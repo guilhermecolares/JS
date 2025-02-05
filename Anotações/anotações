@@ -17,3 +17,11 @@
         // toLocaleString() - método que formata um número (apennas para números)
         // toLocaleString( {style: 'currency', currency: 'BRL'} ) - método que formata um número para moeda
         // "style" = tipo de formatação "currency" = moeda "currency" = tipo de moeda
+        // ------------------------------------------------------------------------------------------------------------
+
+        // OPERADORES ARITMÉTICOS
+        // (+ - * / % **) - adição, subtração, multiplicação, divisão, divisão inteira, potenciação
+        // ORDEM DE PRECEDÊNCIA  () -> ** -> */ % -> + - (parênteses, potenciação, multiplicação, divisão, divisão inteira, adição, subtração)
+        // QUANDO HÁ OPERADORES COM A MESMA PRECEDÊNCIA, A OPERAÇÃO É EXECUTADA DA ESQUERDA PARA A DIREITA
+        // AUTO-ATRIBUIÇÃO QUANDO SOMAMOS OU SUBTRAÍMOS UM VALOR A UMA VARIÁVEL E ATRIBUÍMOS O RESULTADO A MESMA VARIÁVEL
+        // OPERADORES DE INCREMENTO E DECREMENTO (++) (--) - incremento e decremento de 1
