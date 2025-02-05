@@ -7,13 +7,13 @@
         // String() - converte número para string
         // .toString() - converte número para string
 
-        // ${} - interpolação de string - template string
+        // ${} - interpolação de string - template string (crase)
 
-        // .length - propriedade que retorna o tamanho de uma string
+        // .length - propriedade que retorna o tamanho de uma string (caracteres)
         // .toUpperCase() - método que converte string para maiúsculo
         // .toLowerCase() - método que converte string para minúsculo
         // split() - método que divide uma string em partes
         // tofixed() - método que limita o número de casas decimais
-        // toLocaleString() - método que formata um número
+        // toLocaleString() - método que formata um número (apennas para números)
         // toLocaleString( {style: 'currency', currency: 'BRL'} ) - método que formata um número para moeda
         // "style" = tipo de formatação "currency" = moeda "currency" = tipo de moeda
