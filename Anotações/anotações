@@ -1,3 +1,5 @@
+        // TRATAMENTO DE DADOS 04/02/2024
+        
         // (number + number) - number para adição
         // (number + string) - string para concatenação
 
@@ -18,6 +20,8 @@
         // toLocaleString( {style: 'currency', currency: 'BRL'} ) - método que formata um número para moeda
         // "style" = tipo de formatação "currency" = moeda "currency" = tipo de moeda
         // ------------------------------------------------------------------------------------------------------------
+
+        // OPERADORES 05/02/2024
 
         // OPERADORES ARITMÉTICOS
         // (+ - * / % **) - adição, subtração, multiplicação, divisão, divisão inteira, potenciação
