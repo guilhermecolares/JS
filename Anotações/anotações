@@ -60,3 +60,4 @@
         // EVENTOS - AÇÕES QUE OCORREM EM RESPOSTA A ALGO
         // EVENTOS DE MOUSE (click, mouseover, mouseout, mousedown, mouseup, mousemove)
         // EVENTOS DE TECLADO (keydown, keyup, keypress)
+        // addEventListener() - método que anexa um manipulador de eventos a um elemento no javascript
