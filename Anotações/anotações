@@ -40,3 +40,20 @@
         // OPERADOR LÓGICO OU (||) - retorna verdadeiro se uma das expressões for verdadeira
         // NUMA LINHA QUE TENHA OPERADORES ARITMÉTICOS, RELACIONAIS E LÓGICOS, A SEQUÊNCIA DE EXECUÇÃO É A SEGUINTE: ARITMÉTICOS -> RELACIONAIS -> LÓGICOS
         // OPERADOR TERNÁRIO (condição ? expressão1 : expressão2) - operador que retorna um valor baseado em uma condição
+        // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        // DOM 06/02/2024
+        
+        // DOM - DOCUMENT OBJECT MODEL
+        // É UMA INTERFACE QUE PERMITE ACESSAR E MANIPULAR ELEMENTOS HTML
+        // É UMA REPRESENTAÇÃO DO HTML QUE PODE SER MANIPULADA PELO JAVASCRIPT
+        // DÁ ACESSAR POR MARCAÇÃO, NOME, ID, CLASSE, SELETOR CSS, TAG, ATRIBUTO, ETC
+        // PARA ACESSAR UM ELEMENTO ESPECÍFICO DA COLEÇÃO, É NECESSÁRIO ESPECIFICAR O ÍNDICE [0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+        // .innertext - propriedade que retorna o texto de um elemento
+        // .innerHTML - propriedade que retorna o conteúdo HTML de um elemento
+        // getElementByTagName() - retorna uma coleção de elementos com o nome da tag
+        // getElementById() - retorna um elemento com o ID especificado
+        // getElementsByNames() - retorna uma coleção de elementos com o nome especificado
+        // getElementsByClassName() - retorna uma coleção de elementos com a classe especificada
+        // querySelector() - retorna o primeiro elemento que corresponde a um seletor CSS
+        // (nome da variavel).innerText = "texto" - altera o texto de um elemento
