@@ -57,3 +57,6 @@
         // getElementsByClassName() - retorna uma coleção de elementos com a classe especificada
         // querySelector() - retorna o primeiro elemento que corresponde a um seletor CSS
         // (nome da variavel).innerText = "texto" - altera o texto de um elemento
+        // EVENTOS - AÇÕES QUE OCORREM EM RESPOSTA A ALGO
+        // EVENTOS DE MOUSE (click, mouseover, mouseout, mousedown, mouseup, mousemove)
+        // EVENTOS DE TECLADO (keydown, keyup, keypress)
