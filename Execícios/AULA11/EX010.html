@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="nvel1">Velocidade</label><input type="number" name="nvel1" id="nvel1">
+    <button>VERIFICAR</button>
+    
+    <script>
+        var vel1 = Number(document.getElementById('nvel1').value);
+
+    document.querySelector('button').addEventListener('click', function() {
+        var vel1 = Number(document.getElementById('nvel1').value);
+        if (vel1 > 80) {
+            alert('Multado');
+        }
+        else {
+            alert('Liberado');
+        }
+    });
+    </script>
+</body>
+</html>
