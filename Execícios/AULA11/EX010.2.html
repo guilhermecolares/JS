@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRANt</title>
+</head>
+<body>
+    <H1>SISTEMA DE MULTAS</H1>
+    <label for="vel1">SUA VELOCIDADE:</label><input type="number" name="vel1" id="vel1">
+    <button id="btn">VERIFICAR</button>
+    <div id="res"></div>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', verificar);
+
+        function verificar() {
+            var vel = document.getElementById('vel1')
+            var res = document.getElementById('res')
+            var resu = Number(vel.value)
+
+            res.innerHTML = `Sua velocidade atual é de ${resu}<br>`;
+            if (resu > 80) {
+                res.innerHTML += `<strong>MULTADO</strong> por excesso de velocidade`;
+            }
+            else {
+                res.innerHTML += `Você está dentro da velocidade permitida`;
+            }
+        }
+    </script>
+</body>
+</html>
