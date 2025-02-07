@@ -61,3 +61,10 @@
         // EVENTOS DE MOUSE (click, mouseover, mouseout, mousedown, mouseup, mousemove)
         // EVENTOS DE TECLADO (keydown, keyup, keypress)
         // addEventListener() - método que anexa um manipulador de eventos a um elemento no javascript
+        // -------------------------------------------------------------------------------------------------------------------------------------
+
+        // CONDIÇÕES 07/02/2024
+
+        // CONDIÇÕES - ESTRUTURAS DE CONTROLE QUE PERMITEM DECIDIR O FLUXO DE UM PROGRAMA
+        // IF - SE
+        // ELSE - SENÃO
