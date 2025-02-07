@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Minha Nacionalidade</h1>
+    <p>Estou vivendo na Alemanha</p>
+    <button>Verificar</button>
+    <div id="resu"></div>
+
+    <script>
+        document.querySelector('button').addEventListener('click', verificar)
+
+        function verificar() {
+            var pais = 'Alemanha'
+            var res = document.getElementById('resu')
+
+            res.innerHTML = `Estou vivendo no país: <strong>${pais}</strong><br>`
+            if (pais == 'Brasil') {
+                res.innerHTML += 'sou Brasileiro'
+            }
+            else {
+                res.innerHTML += 'sou <strong>Gringo</strong>'
+            }
+        }
+    </script>
+</body>
+</html>
