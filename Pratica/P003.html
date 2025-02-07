@@ -11,7 +11,8 @@
         }
 
         div#perfil {
-            background-color: rgb(9, 224, 142);
+            position: relative;
+            background-color: rgba(27, 219, 146, 0.877);
             text-align: center;
             width: 400px;
             height: 250px;
@@ -24,12 +25,31 @@
 
         div#perfil h1 {
             margin-top: 10px;
+            cursor: default
         }
 
         div#perfil p {
             font-size: 20px;
             text-align: left;
             margin-left: 20px;
+        }
+
+        div#perfil button {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            cursor: pointer;
+            right: 15px;
+            top: 12px;
+            opacity: 1;
+        }
+
+        div#perfil button:hover {
+            background-color: rgb(255, 0, 0);
+            transition: background-color 0.5s;
+            border-radius: 10px;
         }
 
         div#caixas {
@@ -60,6 +80,7 @@
         p {
             font-family: Arial, Helvetica, sans-serif;
             margin: 5px 0px 0px 6px;
+            width: 200px;
         }
     </style>
 </head>
@@ -73,13 +94,14 @@
         <input type="text" name="sexo" id="sexo1">
         <p>QUAL SEU PESO?</p>
         <input type="number" name="peso" id="peso1">
-        <p>QUAL SUA ALTURA?</p>
+        <p>QUAL SUA ALTURA? (cm)</p>
         <input type="number" name="altura" id="altura1">
         <br>
         <input type="button" value="Calcular" id="calcular">
     </div>
 
     <div id="perfil">
+        <button id="voltar">X</button>
         <h1>MEU PERFIL</h1>
         <p id="perfilNome"></p>
         <p id="perfilIdade"></p>
@@ -87,6 +109,7 @@
         <p id="perfilPeso"></p>
         <p id="perfilAltura"></p>
         <p id="perfilIMC"></p>
+        
     </div>
 
     <script>
@@ -103,18 +126,28 @@
         var idade = document.getElementById('idade1').value;
         var sexo = document.getElementById('sexo1').value;
         var peso = Number(document.getElementById('peso1').value);
-        var altura = Number(document.getElementById('altura1').value) / 100; // Converte cm para metros
-
-        var calcular = peso / (altura * altura);
+        var altura = Number(document.getElementById('altura1').value) / 100;
+        var imc = peso / (altura * altura);
         
 
             document.getElementById('perfilNome').innerText = `Meu nome: ${nome}`;
             document.getElementById('perfilIdade').innerText = `Minha idade: ${idade} anos`;
             document.getElementById('perfilSexo').innerText = `Meu sexo: ${sexo}`;
             document.getElementById('perfilPeso').innerText = `Meu peso: ${peso} kg`;
-            document.getElementById('perfilAltura').innerText = `Minha altura: ${altura.toFixed(2)} cm`;
-            document.getElementById('perfilIMC').innerText = `Meu IMC: ${imc}`;
-    });
+            document.getElementById('perfilAltura').innerText = `Minha altura: ${altura.toFixed(2)}m`;
+            document.getElementById('perfilIMC').innerText = `Meu IMC: ${imc.toFixed(2)}`;
+        });
+
+            document.getElementById('voltar').addEventListener('click', function() {
+                caixas.style.display = 'block'
+                perfil.style.display = 'none'
+
+                document.getElementById('nome1').value = '';
+                document.getElementById('idade1').value = '';
+                document.getElementById('sexo1').value = '';
+                document.getElementById('peso1').value = '';
+                document.getElementById('altura1').value = '';
+            });
     </script>
 </body>
 </html>
