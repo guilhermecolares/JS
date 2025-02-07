@@ -10,38 +10,111 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        h1 {
+        div#perfil {
             background-color: rgb(9, 224, 142);
             text-align: center;
-            padding-top: 15px;
             width: 400px;
-            height: 200px;
+            height: 250px;
             border: 2px solid rgba(0, 0, 0, 0.671);
             border-radius: 10px 10px 0px 0px;
             display: none;
             margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#perfil h1 {
+            margin-top: 10px;
+        }
+
+        div#perfil p {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        div#caixas {
+            background-color: rgb(27, 216, 169);
+            width: 400px;
+            height: 350px;
+            border: 2px solid rgba(0, 0, 0, 0.671);
+            border-radius: 0px 0px 10px 10px;
+            margin-left: 5px;
+            display: block;
+            margin: auto;
+        }
+
+        input {
+            margin: 5px 0px 0px 6px;
+            width: 200px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        input#calcular {
+            margin: 5px 0px 0px 6px;
+            width: 208px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px 0px 0px 6px;
         }
     </style>
 </head>
 <body>
-    <h1>PERFIL</h1>
-    <input type="text" name="nome" id="nome1">
-    <input type="number" name="idade" id="idade1">
-    <input type="text" name="sexo" id="sexo1">
-    <input type="number" name="peso" id="peso1">
-    <input type="number" name="altura" id="altura1">
-    <input type="text" name="imc" id="imc1">
-    <input type="button" value="Calcular" id="calcular">
+    <div id="caixas">
+        <p>SEU NOME?</p>
+        <input type="text" name="nome" id="nome1"> 
+        <p>QUAL SUA IDADE?</p>
+        <input type="number" name="idade" id="idade1">
+        <p>QUAL SEU SEXO?</p>
+        <input type="text" name="sexo" id="sexo1">
+        <p>QUAL SEU PESO?</p>
+        <input type="number" name="peso" id="peso1">
+        <p>QUAL SUA ALTURA?</p>
+        <input type="number" name="altura" id="altura1">
+        <br>
+        <input type="button" value="Calcular" id="calcular">
+    </div>
+
+    <div id="perfil">
+        <h1>MEU PERFIL</h1>
+        <p id="perfilNome"></p>
+        <p id="perfilIdade"></p>
+        <p id="perfilSexo"></p>
+        <p id="perfilPeso"></p>
+        <p id="perfilAltura"></p>
+        <p id="perfilIMC"></p>
+    </div>
 
     <script>
-        addEventListener
+        document.getElementById('calcular').addEventListener('click', function() {
 
-        var nome = document.getElementById('nome1')
-        var idade = document.getElementById('idade1')
-        var sexo = document.getElementById('sexo1')
-        var peso = document.getElementById('peso1')
-        var altura = document.getElementById('altura1')
-        var imc = document.getElementById('imc1')
+        var perfil = document.getElementById('perfil')
+        var caixas = document.getElementById('caixas')
+
+        caixas.style.display = 'none'
+
+        perfil.style.display = 'block'
+
+        var nome = document.getElementById('nome1').value;
+        var idade = document.getElementById('idade1').value;
+        var sexo = document.getElementById('sexo1').value;
+        var peso = Number(document.getElementById('peso1').value);
+        var altura = Number(document.getElementById('altura1').value) / 100; // Converte cm para metros
+
+        var calcular = peso / (altura * altura);
+        
+
+            document.getElementById('perfilNome').innerText = `Meu nome: ${nome}`;
+            document.getElementById('perfilIdade').innerText = `Minha idade: ${idade} anos`;
+            document.getElementById('perfilSexo').innerText = `Meu sexo: ${sexo}`;
+            document.getElementById('perfilPeso').innerText = `Meu peso: ${peso} kg`;
+            document.getElementById('perfilAltura').innerText = `Minha altura: ${altura.toFixed(2)} cm`;
+            document.getElementById('perfilIMC').innerText = `Meu IMC: ${imc}`;
+    });
     </script>
 </body>
 </html>
