@@ -16,20 +16,69 @@
             width: 500px;
             height: 250px;
             text-align: center;
+            border-radius: 20px;
+            display: block;
         }
 
         div#informações h1 {
             font-size: 40px;
             margin-top: 2px;
             margin-bottom: 15px;
+            cursor: default;
         }
 
-        div#informações label {
+        .areainput {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3px;
+        }
+
+        .areainput label {
+            font-size: 16px;
             font-weight: bold;
+            width: 150px;
+            text-align: right;
+            margin-right: 7px;
         }
 
-        div#informações input {
-            margin: 1px 0px 1px 0px
+        .areainput input {
+            border: rgba(0, 0, 0, 0) 1px solid;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 5px;
+            background-color: #EBCFA8;
+            border: black 1px solid;
+            border-radius: 10px;
+            width: 100px;
+            height: 25px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transition: 0.7s;
+            background-color: #000000;
+            color: #EBCFA8;
+        }
+
+        div#res {
+            background-color: #EBCFA8;
+            margin: auto;
+            width: 500px;
+            height: 250px;
+            text-align: center;
+            border-radius: 20px;
+            display: none;
+        }
+
+        div#res h1 {
+            font-size: 40px;
+            margin-top: 2px;
+            margin-bottom: 15px;
+            cursor: default;
         }
     </style>
 </head>
@@ -56,7 +105,49 @@
             <label for="peso">SEU PESO: </label>
             <input type="number" name="peso" id="peso1"><br>
         </div>
-        <button>Somar</button>
+        <button id="cal">CALCULAR</button>
     </div>
+
+    <div id="res">
+        <h1>Resultado</h1>
+        <p id="imcres"></p>
+        <p id="situacao"></p>
+    </div>
+
+    <script>
+        document.getElementById('cal').addEventListener('click', function() {
+            
+        var inicio = document.getElementById('informações')
+        var resultadoimc = document.getElementById('res')
+
+        inicio.style.display = 'none'
+        resultadoimc.style.display = 'block'
+
+        var nome = document.getElementById('nome1').value;
+        var idade = Number(document.getElementById('idade1').value);
+        var altura = Number(document.getElementById('altura1').value);
+        var peso = Number(document.getElementById('peso1').value);
+        var imc = peso / (altura * altura);
+        var situação = '';
+
+        if (imc <= 18.5) {
+            situação = 'Abaixo do Peso';
+        } else if (imc <= 24.9) {
+            situação = 'Peso Normal';
+        } else if (imc <= 29.9) {
+            situação = 'Levemente acima do Peso';
+        } else if (imc <= 34.9) {
+            situação = 'Obesidade Grau I';
+        } else if (imc <= 39.9) {
+            situação = 'Obesidade Grau II';
+        } else {
+            situação = 'Obesidade Grau III';
+        }
+
+        document.getElementById('imcres').innerHTML = `Olá, ${nome}! Seu IMC é ${imc.toFixed(2)}`
+        document.getElementById('situacao').innerHTML = `${nome}, sua situação atual é de ${situação}`
+        }
+        )
+    </script>
 </body>
 </html>
