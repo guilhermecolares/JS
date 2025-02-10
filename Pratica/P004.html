@@ -56,9 +56,11 @@
             height: 25px;
             font-weight: 600;
             cursor: pointer;
+            transition: transform 0.5s, background-color 0.5s, color 0.5s;
         }
 
         button:hover {
+            transform: scale(1.10);
             transition: 0.7s;
             background-color: #000000;
             color: #EBCFA8;
@@ -78,6 +80,11 @@
             font-size: 40px;
             margin-top: 2px;
             margin-bottom: 15px;
+            cursor: default;
+        }
+
+        div#res p {
+            font-size: 22px;
             cursor: default;
         }
     </style>
@@ -144,8 +151,8 @@
             situação = 'Obesidade Grau III';
         }
 
-        document.getElementById('imcres').innerHTML = `Olá, ${nome}! Seu IMC é ${imc.toFixed(2)}`
-        document.getElementById('situacao').innerHTML = `${nome}, sua situação atual é de ${situação}`
+        document.getElementById('imcres').innerHTML = `Olá, ${nome}! Seu IMC é <strong>${imc.toFixed(2)}</strong>`
+        document.getElementById('situacao').innerHTML = `${nome}, sua situação atual é de <strong>${situação}</strong>`
         }
         )
     </script>
