@@ -134,7 +134,7 @@
         var idade = Number(document.getElementById('idade1').value);
         var altura = Number(document.getElementById('altura1').value);
         var peso = Number(document.getElementById('peso1').value);
-        var imc = peso / (altura * altura);
+        var imc = peso / ((altura / 100) * (altura / 100));
         var situação = '';
 
         if (imc <= 18.5) {
