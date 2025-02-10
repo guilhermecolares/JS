@@ -71,5 +71,10 @@
 
         // CONDIÇÕES 10/02/2024
 
-        // Condições aninhadas ocorrem quando um if ou else contém outro if, permitindo decisões mais detalhadas e hierárquicas.
-        // else if é usado para verificar múltiplas condições sequenciais dentro de uma estrutura condicional.
+        // CONDIÇÕES ANINHADAS ocorrem quando um if ou else contém outro if, permitindo decisões mais detalhadas e hierárquicas.
+        // ELSE IF é usado para verificar múltiplas condições sequenciais dentro de uma estrutura condicional.
+        // CONDIÇÂO MULTIPLAS
+        // O switch é uma estrutura condicional que avalia uma expressão e executa diferentes blocos de código com base em casos (case). 
+        // Se nenhum case corresponder, a opção default é executada.
+        // Cada case precisa de um break para evitar a execução dos próximos blocos.
+        // O break é usado dentro de um switch para interromper a execução após um case ser satisfeito. Sem ele, os próximos casos serão executados em efeito de "queda"

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU IMC</title>
+    <style>
+        body {
+            background-color: #594A6B;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#informações {
+            background-color: #EBCFA8;
+            margin: auto;
+            width: 500px;
+            height: 250px;
+            text-align: center;
+        }
+
+        div#informações h1 {
+            font-size: 40px;
+            margin-top: 2px;
+            margin-bottom: 15px;
+        }
+
+        div#informações label {
+            font-weight: bold;
+        }
+
+        div#informações input {
+            margin: 1px 0px 1px 0px
+        }
+    </style>
+</head>
+<body>
+    <div id="informações">
+        <h1>IMC</h1>
+
+        <div class="areainput">
+            <label for="nome1">SEU NOME: </label>
+            <input type="text" name="nome" id="nome1"> <br>
+        </div>
+
+        <div class="areainput">
+            <label for="idade">SUA IDADE: </label>
+            <input type="number" name="idade" id="idade1"><br>
+        </div>
+
+        <div class="areainput">
+            <label for="altura">SUA ALTURA (cm):</label>
+            <input type="number" name="altura" id="altura1"><br>
+        </div>
+
+        <div class="areainput">
+            <label for="peso">SEU PESO: </label>
+            <input type="number" name="peso" id="peso1"><br>
+        </div>
+        <button>Somar</button>
+    </div>
+</body>
+</html>
