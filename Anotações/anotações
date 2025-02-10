@@ -68,3 +68,8 @@
         // CONDIÇÕES - ESTRUTURAS DE CONTROLE QUE PERMITEM DECIDIR O FLUXO DE UM PROGRAMA
         // IF - SE
         // ELSE - SENÃO
+
+        // CONDIÇÕES 10/02/2024
+
+        // Condições aninhadas ocorrem quando um if ou else contém outro if, permitindo decisões mais detalhadas e hierárquicas.
+        // else if é usado para verificar múltiplas condições sequenciais dentro de uma estrutura condicional.
