@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom, /* Direção do gradiente (de cima para baixo) */
+        rgba(0, 0, 0, 0.048) 0px, /* Linha preta com opacidade */
+        rgba(0, 0, 0, 0.11) 5px, /* A linha preta tem 1px de altura */
+        transparent 5px, /* A linha passa para transparente logo depois */
+        transparent 5px /* O intervalo de linhas sem cor */
+    );
+    z-index: 9999; /* Faz o gradiente aparecer na frente de tudo */
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+div {
+    margin: auto;
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    height: 280px;
+    border-right: 3px rgba(0, 0, 0, 0.432) solid;
+    border-bottom: 2px rgba(0, 0, 0, 0.432) solid;
+}
+
+div p {
+    padding-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+.imagem {
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
