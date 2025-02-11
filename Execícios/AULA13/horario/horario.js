@@ -1,5 +1,6 @@
+var horas = new Date().getHours();
+
 function MudarCorDeFundo() {
-    var horas = new Date().getHours();
     var cor;
 
     if (horas >= 6 && horas < 12) {
@@ -18,3 +19,10 @@ function MudarCorDeFundo() {
 MudarCorDeFundo();
 
 setInterval(MudarCorDeFundo, 60000);
+
+function MudarImg() {
+    var imgManha = document.getElementById('manha');
+    var imgMeioDia = document.getElementById('meiodia')
+    var imgFimTarde = document.getElementById('fimtarde')
+    var imgNoite = document.getElementById('noite')
+}
