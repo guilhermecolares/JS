@@ -78,3 +78,7 @@
         // Se nenhum case corresponder, a opção default é executada.
         // Cada case precisa de um break para evitar a execução dos próximos blocos.
         // O break é usado dentro de um switch para interromper a execução após um case ser satisfeito. Sem ele, os próximos casos serão executados em efeito de "queda"
+
+        // EXERCÍCIOS 12/02
+
+        // QUANDO QUISER QUE SELECIONE UMA OU OUTRA CAIXA TEM QUE COLOCAR O NOME DOS INPUT IGUAIS

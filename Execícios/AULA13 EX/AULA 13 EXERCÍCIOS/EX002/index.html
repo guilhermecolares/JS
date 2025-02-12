@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="vef.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="il">
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="text" name="nascimento" id="nascimento1">
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas1">
+                <label for="mas1">Masculino</label>
+                
+                <input type="radio" name="radsex" id="fem1">
+                <label for="fem1">Feminino</label> <br>
+
+                <input id="butao" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        <p><i>&#169; GuilhermeColares</i></p>
+    </footer>
+    <script src="vef.js"></script>
+</body>
+</html>
