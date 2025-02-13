@@ -82,3 +82,8 @@
         // EXERCÍCIOS 12/02
 
         // QUANDO QUISER QUE SELECIONE UMA OU OUTRA CAIXA TEM QUE COLOCAR O NOME DOS INPUT IGUAIS
+
+        // REPETIÇÕES 13/02
+
+        // O WHILE() é uma estrutura de repetição que executa um bloco de código enquanto uma condição especificada for verdadeira.
+        // A repetição do...while executa o bloco de código pelo menos uma vez, e depois repete enquanto a condição for verdadeira.
