@@ -87,3 +87,4 @@
 
         // O WHILE() é uma estrutura de repetição que executa um bloco de código enquanto uma condição especificada for verdadeira.
         // A repetição do...while executa o bloco de código pelo menos uma vez, e depois repete enquanto a condição for verdadeira.
+        // for (let i = 0; i < 10; i++) console.log(i); EXEMPLO
