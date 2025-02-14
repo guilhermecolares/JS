@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <label for="caixas">Inicio:</label>
+            <input type="number" name="caixas" id="inicio"> <br>
+
+            <label for="caixas">Fim:</label>
+            <input type="number" name="caixas" id="fim"> <br>
+
+            <label for="caixas">Passo:</label>
+            <input type="number" name="caixas" id="passo"> <br>
+
+            <button onclick="contar()">Contar</button>
+        </div>
+        <div id="res">
+            <p>Esperando valores...</p>
+        </div>
+    </section>
+    <footer>
+        <p>&#169; GuilhermeColares</p>
+    </footer>
+    <script src="contagem.js"></script>
+</body>
+</html>
