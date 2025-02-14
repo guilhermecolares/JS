@@ -12,28 +12,19 @@
     </header>
     <section>
         <div>
-            <label for="numero">Número</label>
+            <label for="numero">Número:</label>
             <input type="number" name="numero" id="num1">
-            <button>Gerar Tabuada</button>
+            <button onclick="gerar()">Gerar Tabuada</button>
         </div>
         <div>
-            <select id="restabuada" size="2">
-                <option disabled selected>Digite um número abaixo</option>
-                <option value="valor1"></option>
-                <option value="valor2"></option>
-                <option value="valor3"></option>
-                <option value="valor4"></option>
-                <option value="valor5"></option>
-                <option value="valor6"></option>
-                <option value="valor7"></option>
-                <option value="valor8"></option>
-                <option value="valor9"></option>
-                <option value="valor10"></option>
+            <select id="restabuada" size="10">
+                <option disabled selected>Digite um número acima</option>
             </select>
         </div>
     </section>
     <footer>
         <p>&#169; GuilhermeColares</p>
     </footer>
+    <script src="tabuada.js"></script>
 </body>
 </html>
