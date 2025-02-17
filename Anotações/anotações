@@ -99,4 +99,11 @@
         // INDICE/KEY É O VALOR QUE INDICA O ESPAÇO QUE ESTÁ CADA VALOR COLOCADO DENTRO DO ARRAY.
         // Um ARRAY é uma variável composta que tem vários elementos. Cada elemento é composto por seu valor e por uma chave (key) de identificação.
         // LET declara uma variável que pode ter seu valor alterado depois de inicializada.
+        // PARA ADICIONAR MAIS VALORES EM UMA POSIÇÃO ESPECIFICA BASTA "nome da variavel[posição que quer colocar o valor] = valor"
+        // PARA COLOCAR UM VALOR POR ULTIMO NAS POSIÇÕES BASTA USAR ".push()" APÓS A VARIAVEL ( EXEMPLO: num.push(7) )
+        // PARA SABER O TAMANHO DO ARRAY ATUAL USE ".length" APÓS A VARIAVEL (exemplo num.length)
+        // PARA ORDEM NA FORMA CRESCENTE BASTA USAR ".sort()" APÓS A VARIAVEL ( exemplo num.sort() )
+        // TEM COMO USAR O FOR DE MANEIRA MAIS SIMPLES PARA OBJETOS E ARRAYS (for in) (exemplo "for(let variavel in variavel) {console.log(num[pos])}")
+        // PARA BUSCAR CHAVES USAMOS "variavel.indexOf(valor)"
+
 
