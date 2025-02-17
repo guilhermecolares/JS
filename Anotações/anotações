@@ -88,3 +88,15 @@
         // O WHILE() é uma estrutura de repetição que executa um bloco de código enquanto uma condição especificada for verdadeira.
         // A repetição do...while executa o bloco de código pelo menos uma vez, e depois repete enquanto a condição for verdadeira.
         // for (let i = 0; i < 10; i++) console.log(i); EXEMPLO
+
+        // VARIAVEIS COMPOSTAS 17/02
+
+        // VARIÁVEIS SIMPLES só conseguem armazenar um valor por vez.
+        // VARIÁVEIS COMPOSTAS devem ser capazes de armazenar vários valores em uma mesma estrutura.
+        // NEM SEMPRE O ARRAY COMEÇA EM 1, DEPENDENDO DA LINGUAGEM DE PROGRAMAÇÃO COMEÇA EM 0.
+        // A VARIAVEL COMPOSTA É UMA ARRAY/VETOR
+        // DENTRO DO ARRAY EXISTEM ELEMENTOS QUE AGRUPA O ESPAÇO DA MEMORIA, O VALOR COLOCADO DENTRO DELE E O ÍNDICE
+        // INDICE/KEY É O VALOR QUE INDICA O ESPAÇO QUE ESTÁ CADA VALOR COLOCADO DENTRO DO ARRAY.
+        // Um ARRAY é uma variável composta que tem vários elementos. Cada elemento é composto por seu valor e por uma chave (key) de identificação.
+        // LET declara uma variável que pode ter seu valor alterado depois de inicializada.
+
