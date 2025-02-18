@@ -106,4 +106,10 @@
         // TEM COMO USAR O FOR DE MANEIRA MAIS SIMPLES PARA OBJETOS E ARRAYS (for in) (exemplo "for(let variavel in variavel) {console.log(num[pos])}")
         // PARA BUSCAR CHAVES USAMOS "variavel.indexOf(valor)"
 
+        // FUNÇÕES 18/02
 
+        // FUNÇÕES são AÇÕES executadas assim que são CHAMADAS ou em decorrência de algum EVENTO.
+        // uma FUNÇÃO pode receber PARÂMENTROS e retornar um RESULTADO.
+        // TEM COMO COLOCAR PARÂMETROS PRE DEFINIDOS DEPOIS DA VARIEL EM FUNCTION USANDO =
+        // VARIAVEIS PODEM TER FUNÇÕES DENTRO DO SEU VALOR (ex: let v = function(n) {})
+        // Uma chamada recursiva acontece quando uma função chama a si mesma dentro do seu próprio corpo, repetindo o processo até atingir uma condição de parada.
