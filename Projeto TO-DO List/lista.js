@@ -35,6 +35,16 @@ function adicionar() {
     imgEditar.onclick = function() {
         texto.contentEditable = true;
         texto.focus();
+
+        setTimeout(function() {
+            // Move o cursor para o final do texto
+            let range = document.createRange();
+            let selection = window.getSelection();
+            range.selectNodeContents(texto);
+            range.collapse(false); // Coloca o cursor no final
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }, 0);
     }
 
     texto.onkeydown = function(event) {

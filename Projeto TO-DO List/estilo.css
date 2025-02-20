@@ -94,7 +94,8 @@ li {
     align-items: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+    font-weight: lighter;
+    background-color: #f0eaea85;
     border-radius: 20px;
 }
 
@@ -109,7 +110,7 @@ li {
     background-color: transparent;
     align-items: center;
     margin-right: 10px;
-    gap: 2px;
+    gap: 5px;
 }
 
 button#editar, button#deletar {
@@ -117,20 +118,19 @@ button#editar, button#deletar {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border: none;
     cursor: pointer;
     transform: scale(1);
-    transition: 0.7s;
+    transition: 1s;
     border-radius: 50px;
 }
 
 button#editar:hover, button#deletar:hover {
     transform: scale(1.2);
-    transition: 0.4s;
+    transition: 0.7s;
     border: 1px black solid;
-    background-color: #dad3d3;
 }
 
 #imgEditar {
@@ -142,12 +142,12 @@ button#editar:hover, button#deletar:hover {
 
 input#check {
     background-color: white;
+    border: 1px solid rgb(0, 0, 0);
     appearance: none;
     border-radius: 80px;
-    border: 1px solid rgb(78, 75, 75);
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    margin: 0px 10px 0px 0px;
     cursor: pointer;
     transform: scale(1);
     transition: 0.7s;
@@ -155,6 +155,7 @@ input#check {
 
 input#check:checked {
     background-color: #186662;
+    border: none;
     transform: scale(1);
     transition: 0.7s;
 }
@@ -173,6 +174,25 @@ span {
     color: black;
     text-decoration: none;
     transition: 1s;
+}
+
+span:focus {
+    outline: 1px solid black;  /* Cor do contorno ao focar */
+    animation: pulsePadding 4s infinite;  /* Animação de pulsação */
+    padding: 0px 7px 0px 7px;
+    border-radius: 20px;
+}
+
+@keyframes pulsePadding {
+    0% {
+        transform: scale(1);  /* Tamanho original */
+    }
+    50% {
+        transform: scale(1.05);  /* Aumenta ligeiramente */
+    }
+    100% {
+        transform: scale(1);  /* Retorna ao tamanho original */
+    }
 }
 
 input#check:checked + span {
