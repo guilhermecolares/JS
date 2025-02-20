@@ -9,6 +9,9 @@ function adicionar() {
 
     let lista = document.createElement('li'); //LISTA
 
+    let conteudo = document.createElement('div');
+    conteudo.classList.add('conteudo');
+
     let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.id = 'check';
@@ -18,20 +21,28 @@ function adicionar() {
     texto.textContent = informação;
     lista.appendChild(texto);
 
+    let botoes = document.createElement('div');
+    botoes.classList.add('botoes');
+
     let butãoEditar = document.createElement('button'); //EDITAR
     butãoEditar.id = 'editar';
-    butãoEditar.onclick = function() {
-        let novoTexto = prompt('Editar:', texto.textContent);
-        if (novoTexto !== null && novoTexto.trim() !== '') {
-            texto.textContent = novoTexto;
-        }
-    }
     
     let imgEditar = document.createElement('img'); //IMG DO EDITAR
-    imgEditar.src = 'imgeditar.png';
+    imgEditar.src = 'editar.png';
     imgEditar.alt = 'Editar';
     imgEditar.id = 'imgEditar';
     butãoEditar.appendChild(imgEditar);
+    imgEditar.onclick = function() {
+        texto.contentEditable = true;
+        texto.focus();
+    }
+
+    texto.onkeydown = function(event) {
+        if (event.key === 'Enter') {
+            texto.contentEditable = false;
+            event.preventDefault();
+        }
+    }
 
     let butãoDeletar = document.createElement('button');
     butãoDeletar.textContent = 'X'
@@ -40,9 +51,16 @@ function adicionar() {
         campoLista.removeChild(lista);
     }
 
+    conteudo.appendChild(checkbox);
+    conteudo.appendChild(texto);
+
+    botoes.appendChild(butãoEditar);
+    botoes.appendChild(butãoDeletar);
+    
+    lista.appendChild(conteudo);
+    lista.appendChild(botoes);
+    
     campoLista.appendChild(lista);
-    lista.appendChild(butãoEditar);
-    lista.appendChild(butãoDeletar);
 
     document.getElementById('add').value = '';
 }
