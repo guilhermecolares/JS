@@ -113,3 +113,19 @@
         // TEM COMO COLOCAR PARÂMETROS PRE DEFINIDOS DEPOIS DA VARIEL EM FUNCTION USANDO =
         // VARIAVEIS PODEM TER FUNÇÕES DENTRO DO SEU VALOR (ex: let v = function(n) {})
         // Uma chamada recursiva acontece quando uma função chama a si mesma dentro do seu próprio corpo, repetindo o processo até atingir uma condição de parada.
+
+        // OBJETOS 26/02
+
+        // PARA DECLARAR UM OBJETO USAMOS "let objeto = {}"
+        // PARA ADICIONAR UMA PROPRIEDADE AO OBJETO USAMOS "objeto.propriedade = 'valor'"
+        // PARA ADICIONAR UM INDICE PERSONALIZADO AO OBJETO USAMOS let objeto = {propriedade: 'valor', propriedade2: 'valor2'}
+        // PARA ACESSAR UMA PROPRIEDADE DO OBJETO USAMOS "objeto.propriedade"
+        // PARA ACESSAR UM INDICE PERSONALIZADO DO OBJETO USAMOS "objeto.propriedade2"
+        // PARA COLOCAR UMA FUNÇÃO DENTRO DE UM OBJETO USAMOS "objeto.funcao = function() {}"
+
+        // VALORES BOOLEANOS 26/02
+
+        // OS VALORES BOOLEANOS SAO TRUE OU FALSE
+        // USAMOS "let variavel = true" OU "let variavel = false"
+        // TIPOS DE TRUES 1, 'true', "true", true, 1.0, NaN, Infinity
+        // TIPOS DE FALSOS 0, '', null, undefined, false, 0.0, -0.0, -NaN, -Infinity
