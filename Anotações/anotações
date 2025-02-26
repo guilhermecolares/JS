@@ -123,9 +123,54 @@
         // PARA ACESSAR UM INDICE PERSONALIZADO DO OBJETO USAMOS "objeto.propriedade2"
         // PARA COLOCAR UMA FUNÇÃO DENTRO DE UM OBJETO USAMOS "objeto.funcao = function() {}"
 
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        // REVISANDO O BÁSICO 26/02
+
         // VALORES BOOLEANOS 26/02
 
         // OS VALORES BOOLEANOS SAO TRUE OU FALSE
         // USAMOS "let variavel = true" OU "let variavel = false"
-        // TIPOS DE TRUES 1, 'true', "true", true, 1.0, NaN, Infinity
+        // TIPOS DE VALORES TRUTHY 1, "texto", {}, [], true, Infinity, -1
         // TIPOS DE FALSOS 0, '', null, undefined, false, 0.0, -0.0, -NaN, -Infinity
+        // == COMPARA VALOR
+        // === COMPARA VALOR E TIPO
+        // ! INVERTE O VALOR
+
+        // DIFERENÇA ENTRE NULL E UNDEFINED
+
+        // NULL SIGNIFICA QUE O VALOR NÃO EXISTE
+        // UNDEFINED SIGNIFICA QUE NÃO FOI DECLARADO O VALOR
+        // QUANDO FOR NO NAVEGADOR É CHAMADO DE WINDOW
+        // QUANDO FOR NO NODE.JS É CHAMADO DE GLOBAL
+        // UNDEFINED É UMA PROPRIEDADE DO OBJETO GLOBAL
+        // NULL É UM LITERAL QUE REPRESENTA AUSENCIA DE VALOR E NÃO UMA PROPRIEDADE DO OBJETO GLOBAL
+        // TYPEOF NULL = NULL
+        // TYPEOF UNDEFINED = UNDEFINED
+
+        // function()
+
+        // EXEMPLO DE FUNCTION function verificiar() {}
+        // DENTRO DE () PASSANDO OS PARÂMETROS QUE SÃO UMA VARIAVEL
+        // DENTRO DE {} PASSANDO O QUE SÃO AS AÇÕES QUE VAI FAZER A FUNÇÕES
+        // FUNÇÕES SÃO BLOCOS DE CÓDIGO QUE RETORNAM UM RESULTADO
+        // PROCEDIMENTOS SÃO BLOCOS DE CÓDIGO QUE NÃO RETORNAM UM RESULTADO
+        // CASO QUEIRA RETORNAR UM RESULTADO DENTRO DE UMA FUNÇÕES USAMOS RETURN
+        // CASO NÃO RETORNE NADA O VALOR RETORNADO SERÁ "UNDEFINED"
+        // FUNÇÃO ANONIMA - FUNÇÕES SEM NOME
+        // EXEMPLO DE FUNÇÃO ANONIMA function() {}
+        // ARROW FUNCTION - FUNÇÕES SEM NOME
+        // EXEMPLO DE ARROW FUNCTION () => {}
+        // QUANDO HÁ UMA LINHA DE CODIGO NÃO PRECISA DE RETURNAR O RESULTADO E NÃO PRECISA DE {} USAMOS A ARROW FUNCTION
+        // FUNÇÕES IMEDIATAS - FUNÇÕES QUE SÃO DECLARADAS DENTRO DE OUTRAS FUNÇÕES
+        // IIFE - FUNÇÕES IMEDIATAS
+        // EXEMPLO DE IIFE (function() {})()
+
+        // Hosting 26/02 
+
+        // HOSTING SÃO AS DECLARAÇÕES DE FUNÇÕES E VARIAVEIS QUE SÃO DECLARADAS FORA DE FUNÇÕES
+        // PARA EUSAR UMA FUNÇÕES DECLARADA FORA DE FUNÇÕES USAMOS O NOME DA FUNÇÕES
+        // EXEMPLO DE VARIAVEL DECLARADA FORA DE FUNÇÕES variavel = 2; var variavel;
+        // EXEMPLO DE FUNÇÕES DECLARADAS FORA DE FUNÇÕES verificar(); function verificar() {}
+        // A UNICA VARIAVEL QUE PODE SER USADA PRA HOSTING É VAR
+        // LET E CONST NÃO PODEM SER USADAS PRAS HOSTING
