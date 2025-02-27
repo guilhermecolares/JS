@@ -114,15 +114,6 @@
         // VARIAVEIS PODEM TER FUNÇÕES DENTRO DO SEU VALOR (ex: let v = function(n) {})
         // Uma chamada recursiva acontece quando uma função chama a si mesma dentro do seu próprio corpo, repetindo o processo até atingir uma condição de parada.
 
-        // OBJETOS 26/02
-
-        // PARA DECLARAR UM OBJETO USAMOS "let objeto = {}"
-        // PARA ADICIONAR UMA PROPRIEDADE AO OBJETO USAMOS "objeto.propriedade = 'valor'"
-        // PARA ADICIONAR UM INDICE PERSONALIZADO AO OBJETO USAMOS let objeto = {propriedade: 'valor', propriedade2: 'valor2'}
-        // PARA ACESSAR UMA PROPRIEDADE DO OBJETO USAMOS "objeto.propriedade"
-        // PARA ACESSAR UM INDICE PERSONALIZADO DO OBJETO USAMOS "objeto.propriedade2"
-        // PARA COLOCAR UMA FUNÇÃO DENTRO DE UM OBJETO USAMOS "objeto.funcao = function() {}"
-
         //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         // REVISANDO O BÁSICO 26/02
@@ -174,3 +165,22 @@
         // EXEMPLO DE FUNÇÕES DECLARADAS FORA DE FUNÇÕES verificar(); function verificar() {}
         // A UNICA VARIAVEL QUE PODE SER USADA PRA HOSTING É VAR
         // LET E CONST NÃO PODEM SER USADAS PRAS HOSTING
+
+        // OBJECTS 27/02
+
+        // OBJECTS É UMA COLEÇÕES DE CHAVES E VALORES
+        // EXEMPLO DE OBJECTS let carro = {marca: 'Fiat', cor: 'Branco', ano: 2010}
+        // NO QUAL MARCA, COR E ANO SÃO AS CHAVES E FIAT, BRANCO E 2010 SÃO OS VALORES
+        // PODE SER INICIALIZADO USANDO new Object()
+        // PODE SER INICIALIZADO USANDO {}
+        // PODE SER INICIALIZADO USANDO Object.create()
+        // PODEM ARMAZENAR DIVERSOS TIPOS DE DADOS
+        // PODEM ARMAZENAR FUNÇÕES
+        // PODEM ARMAZENAR OUTROS OBJECTS
+        // PODEM ARMAZENAR ARRAYS
+        // PODEM ARMAZENAR STRINGS
+        // PODEM ARMAZENAR NUMEROS
+        // PODEM ARMAZENAR BOOLEANOS
+        // PRA ACESSAR UM VALOR DO OBJETO USAMOS O NOME DA CHAVE
+        // PROPIEDADE E METODOS EM OUTROS LINGUAGENS SÃO COISAS DIFERENTES
+        // MAS O JAVASCRIPT ENTENDE TUDO COMO PROPIEDADES DENTRO DE OBJETOS
