@@ -1,14 +1,14 @@
-let bibilioteca = [];
+let biblioteca = [];
 
 function Livro(título, autor, ano, lido) {
     this.título = título;
     this.autor = autor;
     this.ano = Number(ano);
-    this.lido = Boolean(lido);
+    this.lido = false;
 }
 
 function adicionarLivro(Livro) {
-    bibilioteca.push(Livro)
+    biblioteca.push(Livro)
 }
 
 Livro.prototype.descrever = function() {
@@ -37,11 +37,11 @@ adicionarLivro(livro2);
 adicionarLivro(livro3);
 
 function listarLivros() {
-    return bibilioteca.map(livro => livro.descrever());
+    return biblioteca.map(livro => livro.descrever());
 }
 
 function marcarLivroComoLido(título) {
-    let livro = bibilioteca.find(livro => livro.título === título);
+    let livro = biblioteca.find(livro => livro.título === título);
     if (livro) {
         livro.marcarComoLido();
     } else {
@@ -50,9 +50,9 @@ function marcarLivroComoLido(título) {
 }
 
 function removerLivro(título) {
-    let procurar = bibilioteca.findIndex(livro => livro.título === título);
+    let procurar = biblioteca.findIndex(livro => livro.título === título);
     if (procurar >= 0) {    
-        bibilioteca.splice(procurar, 1);
+        biblioteca.splice(procurar, 1);
     } else {    
         console.log('Livro não encontrado');
     }
