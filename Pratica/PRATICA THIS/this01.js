@@ -19,7 +19,7 @@ function ContaBancaria() {
     }
 
     this.verSaldo = function() {
-        return console.log(this.saldo)
+        return (this.saldo)
     }
 }
 
