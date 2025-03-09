@@ -48,7 +48,7 @@ function adicionar() {
     }
 
     texto.onkeydown = function(event) {
-        if (event.key === 'Enter') {
+        if (event.key === 'Enter') { 
             texto.contentEditable = false;
             event.preventDefault();
         }
