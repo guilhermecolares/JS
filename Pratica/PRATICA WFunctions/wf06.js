@@ -17,9 +17,9 @@ function Aprovar(media) {
 }
 
 function Tempo(funcao) {
-    return function(media) {
+    return function() {
         console.time('Tempo de execução');
-        const result = funcao(media);
+        const result = funcao();
         console.timeEnd('Tempo de execução');
         return result;
     }
