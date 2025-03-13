@@ -31,6 +31,9 @@ function criarFuncao() {
         console.log('função criada')
         return function() {
             console.log('segunda função criada')
+            return function() {
+                console.log('terceira função criada')
+            }
         }
     }
 }
@@ -38,4 +41,4 @@ function criarFuncao() {
 const func = criarFuncao()
 func()
 
-criarFuncao()()()
+criarFuncao()()()()
