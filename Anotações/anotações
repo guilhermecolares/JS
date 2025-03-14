@@ -257,3 +257,29 @@
         // CRIA FUNCIONALIDADES COMPLEXAS MAIS FACILMENTE
         // PEGA CÓDIGOS MAIS COMPLEXOS E TRANSFORMA EM UMA SINTAXE MAIS SIMPLES
         // API'S TÃO DIVIDAS EM API DE NAVEGADOR E API DE TERCEIROS
+
+        //
+
+        /*
+        🔹 O que são requisições e respostas HTTP?
+        Quando um navegador ou outro sistema precisa de dados do back-end, ele faz uma requisição HTTP para a API.
+
+        📌 Estrutura de uma requisição HTTP
+        Uma requisição tem quatro partes principais:
+        1️⃣ URL → Endereço do servidor (https://api.exemplo.com/users).
+        2️⃣ Método HTTP → Define a ação (exemplo: GET, POST, PUT, DELETE).
+        3️⃣ Cabeçalhos (Headers) → Informações extras (exemplo: tipo de conteúdo, autenticação).
+        4️⃣ Corpo (Body) → Dados enviados (usado em POST e PUT).
+
+        📌 Métodos HTTP mais usados
+        🔹 GET → Pega dados (ex: buscar um usuário).
+        🔹 POST → Envia novos dados (ex: criar um novo usuário).
+        🔹 PUT → Atualiza um dado existente.
+        🔹 DELETE → Remove um dado.
+
+        📌 Exemplo de fluxo
+        1️⃣ O usuário acessa um site e o front-end faz uma requisição GET para https://api.exemplo.com/users.
+        2️⃣ O back-end recebe essa requisição e busca os dados no banco de dados.
+        3️⃣ O back-end responde com um JSON contendo a lista de usuários.
+        4️⃣ O front-end exibe esses usuários na tela.
+        */
